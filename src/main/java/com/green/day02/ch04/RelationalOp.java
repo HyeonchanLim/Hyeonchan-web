@@ -15,8 +15,10 @@ public class RelationalOp {
         타입의 형변환을 할때 크기가 작은걸로는 불가능
         */
         System.out.printf("%d >= %d : %b\n" , n1 , n2 , (n1>=n2));
-        System.out.printf("%d >= %d : %b\n" , n1 , n2 , (n1<=n2));
-        System.out.printf("%f >= %d : %b\n" , n5 , n3 , (n5<=n3));
+        System.out.printf("%d <= %d : %b\n" , n1 , n2 , (n1<=n2));
+        System.out.printf("%f == %d : %b\n" , n5 , n3 , (n5==n3));
+        System.out.printf("%f != %d : %b\n" , n5 , n3 , (n5!=n3));
+
 
     }
 }
