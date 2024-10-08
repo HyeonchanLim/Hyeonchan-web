@@ -16,5 +16,13 @@ public class PrefixPostfixOp {
         System.out.printf("4 - n: %d\n" , n);
         n--;
         System.out.printf("5 - n: %d\n" , n);
+
+        System.out.println("-------");
+        int n2 = 10 , n3=10;
+        System.out.printf("n2++ : %d\n" , n2++); // prefix : 읽기 -> 쓰기  , 10 출력 -> +1
+        System.out.printf("n2 : %d\n" , n2);
+        System.out.println();
+        System.out.printf("++n2 : %d\n" , ++n2); // postfix : 쓰기 -> 읽기 , +1 -> 11출력
+        System.out.printf("n2 : %d\n" , n2);
     }
 }
