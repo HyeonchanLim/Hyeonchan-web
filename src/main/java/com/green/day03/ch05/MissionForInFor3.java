@@ -12,10 +12,18 @@ public class MissionForInFor3 {
         System.out.println("----");
 
 
-        int len = star * star;
-        for ( int i = 1; i <= len; i++) {
+        int len = star * star; // 5*5 = 25 -> len
+        for ( int i = 1; i <= len; i++) { // i<=25 , i++
             System.out.print("*");
-            if (i % star == 0) {
+            if (i % star == 0) { // 25 / 5 == 0 -> 5별 -> 5별 찍히면 개행
+                System.out.println();
+            }
+        }
+        // 2~9 랜덤숫자 별찍기
+        int star2 = (int)(Math.random()*8)+2;
+        for (int i=1; i<=star2; i++){
+            System.out.print("*");
+            if (i%star2==0){
                 System.out.println();
             }
         }
