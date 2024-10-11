@@ -17,15 +17,23 @@ public class MethodStudy {
      메소드를 크게 두 분류
      void 메소드 - 리턴하는 값이 없다. 결과값이 없음
 
-     비void 메소드 - 리턴하는 값이 있다. 결과값이 있음
+     return 메소드 (비void 메소드) - 리턴하는 값이 있다. 결과값이 있음
      */
     public static void main(String[] args) {
-        sum(1,10,"11"); // sum 메소드를 호출
-        sum(20,15,"125");
+        MethodStudy.sum(1,10,"11"); // sum 메소드를 호출 , 클래스명.메소드
+        sum(20,15,"125"); // 메소드 단일이면 void 메소드일 확률이 높음
+        int result = returnSum(5,7); // 타입 + 메소드 면 return메소드일 확률이 높음
+
+        System.out.println("result = " + result);
     }
+
+
     // sum 메소드를 정의했고 정수타입 n1 과 n2를 선언했다 .
     // 여기서 메소드의 n1 , n2를 메인 메소드에 있는 sum(n1,n2)를 호출하여 밑에 n1 , n2에 대입
     static void sum(int n1, int n2 , String n3){
-        System.out.printf("%d + %d = %d\n" ,n1, n2, (n1=n2));
+        System.out.printf("%d + %d = %s\n" ,n1, n2, n3);
+    }
+    static int returnSum(int n1 , int n2) {
+        return  n1 + n2;
     }
 }
