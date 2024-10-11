@@ -15,5 +15,13 @@ public class MissionForInFor4 {
             }
             System.out.println();
         }
+        System.out.println("---");
+
+        for (int i = 1; i<=star; i++){
+            for ( int j=star; j>0; j--){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
     }
 }
