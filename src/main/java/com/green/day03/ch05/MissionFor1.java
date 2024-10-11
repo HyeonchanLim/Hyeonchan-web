@@ -13,7 +13,7 @@ public class MissionFor1 {
          */
         int n = 1;
         for (int i=2; i<11; i++){
-            n = n * i;
+            n *= i;
         }
         System.out.printf("%,d\n" , n);
     }

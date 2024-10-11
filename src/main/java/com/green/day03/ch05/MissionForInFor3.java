@@ -4,7 +4,7 @@ public class MissionForInFor3 {
     public static void main(String[] args) {
         int star = (int)(Math.random()*6)+3; // 3~8사이 랜덤 숫자
         for (int i=1; i<=star; i++) {
-            for (int j = 1; j <= star; j++) {
+            for (int j = 1; j <= i; j++) {
             System.out.print("*");
             }
         System.out.println();
@@ -19,9 +19,12 @@ public class MissionForInFor3 {
                 System.out.println();
             }
         }
+        System.out.println("----");
         // 2~9 랜덤숫자 별찍기
-        int star2 = (int)(Math.random()*8)+2;
-        for (int i=1; i<=star2; i++){
+        int star2 = (int)(Math.random()*10)+1;
+        int sum1 = star2 * star2;
+        System.out.println(star2);
+        for (int i=1; i<=sum1; i++){
             System.out.print("*");
             if (i%star2==0){
                 System.out.println();

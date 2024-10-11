@@ -12,5 +12,7 @@ public class ContinueBasic2 {
             }
         }
         System.out.println("count :" + count);
+
+
     }
 }

@@ -1,4 +1,4 @@
-package com.green.study;
+package com.green.study.day01;
 
 public class ex5 {
     public static void main(String[] args) {
