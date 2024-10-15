@@ -17,5 +17,19 @@ public class StackStudy {
 
 
          */
+        System.out.println("-- main [start] --");
+        methodA();
+        System.out.println("-- main [end] --");
+    }
+
+    static void methodA() {
+        System.out.println("---- methodA [start] ----");
+        methodB();
+        System.out.println("---- methodA [end] ----");
+    }
+
+    static void methodB() {
+        System.out.println("------ methodB [start] ------");
+        System.out.println("------ methodB [end] ------");
     }
 }
