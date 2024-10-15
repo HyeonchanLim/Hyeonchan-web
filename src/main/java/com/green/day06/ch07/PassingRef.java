@@ -22,7 +22,7 @@ public class PassingRef {
         // void , return
         // static , non-static
     }
-    static void check(BankAccount ba){
+    static void check(BankAccount ba){ // check(ba) 주소값을 passing 함
         ba.checkMyBalance();
     }
 }
