@@ -1,6 +1,6 @@
 package com.green.day05.ch07;
 
-public class BankAccount {
+public class BankAccountPO {
     static int balance = 0; //static 전역변수
 
     static int deposit(int amount) { //입금을 담당하는 메소드

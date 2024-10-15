@@ -4,7 +4,7 @@ import com.green.day06.ch07.BankAccount;
 
 public class BankAccountPoTest2 {
     public static void main(String[] args) {
-        BankAccountPO po1 = new BankAccountPo();
+        BankAccountPO po1 = new BankAccountPO();
         po1.deposit(1000);
         po1.checkMyBalance();
 
