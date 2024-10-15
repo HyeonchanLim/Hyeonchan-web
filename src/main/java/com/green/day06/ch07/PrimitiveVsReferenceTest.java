@@ -15,7 +15,7 @@ public class PrimitiveVsReferenceTest {
 
         NumberBox nb = new NumberBox();
         nb.num = 10; //
-        changeNum(nb);
+        changeNum(nb); //changeNum 메소드
         System.out.println("nb.num" + nb.num);
     }
         /*
@@ -27,7 +27,6 @@ public class PrimitiveVsReferenceTest {
     public static void changeNum(int num){
         num = 100;
     }
-
         /*
         main 메소드에 있는 nb 변수(main-nb)와 changeNum 메소드에 있는 nb 매개변수(m-nb)는 다른 공간이다.
         다만 같은 값(주소값)을 가지고 있다. 그로인해 같은 객체에 접근할 수 있다.
