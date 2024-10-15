@@ -5,6 +5,7 @@ public class DupRef {
         BankAccount ba1 = new BankAccount();
         BankAccount ba2 = ba1; // 주소값 복사 == 얕은 복사 == Shallow Copy
 
+
         ba1.deposit(1000);
         ba2.checkMyBalance(); //1000 -> 주소값 참조
 

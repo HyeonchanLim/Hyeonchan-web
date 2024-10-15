@@ -10,19 +10,18 @@ public class PrimitiveVsReferenceTest {
     public static void main(String[] args) {
         int num = 10; //
 
-        changeNum(num);
-        System.out.println("num"+num);
+        changeNum(num); // changeNum 메소드에 위의 int num = 10; 이라는 주소값을 참고
+        System.out.println("num : "+num); // changeNum 메소드의 int num이 아닌 main 메소드의 int num=10;을 가져옴
 
-        NumberBox nb = new NumberBox();
-        nb.num = 10; //
-        changeNum(nb); //changeNum 메소드
+        NumberBox nb = new NumberBox(); // NumberBox만 저장 가능한 새로운 객체를 생성하고 nb라는 변수에 저장
+        nb.num = 10; // 새로 만든 nb 에 10을 저장
+        changeNum(nb); //changeNum 메소드에서 nb(10)의 주소값을 가져감
         System.out.println("nb.num" + nb.num);
     }
         /*
         main 메소드에 있는 num 변수(main num)와 changeNum메소드에 있는 num매개변수 (m-num)는 다른 공간이다.
         main-num이 가지고 있는 값을 복사하여 m-num에 저장했다.
         m-num값을 변경한다고 하여 main-num 값이 변경되는 것은 아니다. 왜? 다른 공간이기 때문.
-
          */
     public static void changeNum(int num){
         num = 100;

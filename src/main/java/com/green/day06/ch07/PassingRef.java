@@ -7,6 +7,7 @@ public class PassingRef {
         ba.deposit(1000);
 
         BankAccount ba2 = ba;
+        // BankAccount 만 저장가능한 객체인 ba2 와 ba라서 = 대입연산자 계산이 가능 , ba.deposit에 1000이 저장되어 있어서 ba2에도 1000
 
         ba2 = null; // null의 의미는 객체를 가르키고 있지 않다. 주소값 없음
         if (ba2 != null) {

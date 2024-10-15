@@ -6,7 +6,7 @@ public class InfoHideCircle {
         c.setRad(1.5);
         System.out.println("원의 넓이(1):"+c.getArea());
 
-       // c.rad = -3.3; // rad 멤버필드에 접근이 되지 않는다. (읽기 쓰기 불가능)
+       // c.rad = -3.3; // rad 멤버필드에 접근이 되지 않는다. (읽기 쓰기 불가능) , private 때문에 불가능
         c.setRad(-3.3);
         System.out.println("원의 넓이(2):"+c.getArea());
 
