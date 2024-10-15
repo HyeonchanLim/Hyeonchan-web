@@ -14,5 +14,5 @@ public class InfRecul {
         //showHi(--cnt); <-- 감소식을 뒤에 붙이지 말고 앞에
         showHi(cnt - 1);
     }
-    }
+
 }
