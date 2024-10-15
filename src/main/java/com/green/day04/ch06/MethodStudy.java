@@ -22,7 +22,8 @@ public class MethodStudy {
     public static void main(String[] args) {
         MethodStudy.sum(1,10,"11"); // sum 메소드를 호출 , 클래스명.메소드
         sum(20,15,"125"); // 메소드 단일이면 void 메소드일 확률이 높음
-        int result = returnSum(5,7); // 타입 + 메소드 면 return메소드일 확률이 높음
+        int result = returnSum(5,7); // 타입 + 메소드 면 return메소드일 확률이 높음.
+        // (5,7) <- 5, 7 데이터는 인자라고 부름
 
         System.out.println("result = " + result);
     }
