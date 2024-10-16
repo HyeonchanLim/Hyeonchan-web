@@ -4,7 +4,7 @@ import java.io.PrintStream;
 
 public class SystemOutPrintln {
     public static void main(String[] args) {
-        // System.abc.kkk().ggg
+        // System.abc.kkk().ggg / 메서드 체이닝
 
         // System.abc 의 결과물을 "A" 지칭하자 -> A.kkk().ggg
         // A.KKK() 의 결과물을 "B" 지칭하자 -> B.ggg
