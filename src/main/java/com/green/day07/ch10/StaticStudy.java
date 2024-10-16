@@ -61,6 +61,8 @@ class StaticNumBox {
     static void sum(int n1 , int n2) {
         System.out.println(n1 + n2);
     }
+    // static int sum () {return 0;} // void 리턴 상관없이 파라미터만 다르면 오버로딩 다 가능함 메소드명 동일해야함
+
     static void sum() {
         System.out.println(n1 + n2);
         // System.out.println(n3 + n4); // static 메소드에서 인스턴스 멤버필드 접근 불가
