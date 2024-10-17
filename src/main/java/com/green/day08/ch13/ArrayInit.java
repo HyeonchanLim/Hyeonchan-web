@@ -11,9 +11,11 @@ public class ArrayInit {
         3 : 40
         4 : 50
          */
+
         for (int i=0; i<arr.length; i++) {
             arr[i] = (i+1) * 10; // for 문 두개 쓰더라도 읽기 , 쓰기 따로 하는걸 추천 !
         }
+
         for (int i=0; i<arr.length; i++) {
             System.out.printf("arr[%d]:%d\n",i,arr[i]);
         }
