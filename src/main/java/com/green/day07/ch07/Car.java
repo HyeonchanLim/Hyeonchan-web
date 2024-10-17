@@ -25,7 +25,8 @@ public class Car {
         1. this.    : 멤버필드 , 멤버메소드 사용하고 싶을 때 , this. 생략가능할 때가 있다.
         2. this()   : 생성자에서 다른 생성자 호출시 사용 가능
          */
-        this("white" ,gearType,door);
+        this("white" ,gearType,door); // 기본생성자로 객체 생성시 항상 "white" 같은 값이 나옴 - 하드코딩
+
         //this.introduce();
         // introduce();
         // 생성자에서 생성자 호출이 가능함 밑에 Car 생성자에서 타입을 만들어 놨어서 참고를함

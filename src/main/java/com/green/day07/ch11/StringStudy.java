@@ -1,5 +1,7 @@
 package com.green.day07.ch11;
 
+import java.awt.*;
+
 public class StringStudy {
     public static void main(String[] args) {
         String str1 = "Coffee";
@@ -46,6 +48,11 @@ public class StringStudy {
         int n = 10;
         String str9 = n + "";
         String str10 = String.valueOf(n); //valueof에 오버로딩으로 모든 타입이 잇어서 String으로 전부 변경할 수 있다.
+
+        System.out.println("-------");
+        String str11 = "abcdefcd";
+        String str11Result = str11.replace("cd","CD"); // replace (바꿔야 하는 "값" , 바꿀 "값")
+        System.out.println("str1Result : " + str11Result);
 
     }
 }

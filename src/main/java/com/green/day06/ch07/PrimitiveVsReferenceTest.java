@@ -8,14 +8,13 @@ package com.green.day06.ch07;
 
 public class PrimitiveVsReferenceTest {
     public static void main(String[] args) {
-        int num = 10; //
-
-        changeNum(num); // changeNum 메소드에 위의 int num = 10; 이라는 주소값을 참고
+        int num = 10; // 객체가 없는 primitive 타입의 데이터라서 주소값이 없음
+        changeNum(num); // changeNum 메소드에 int num = 10; 을 가져오는데 주소값이 전달되지는 않음
         System.out.println("num : "+num); // changeNum 메소드의 int num이 아닌 main 메소드의 int num=10;을 가져옴
 
-        NumberBox nb = new NumberBox(); // NumberBox만 저장 가능한 새로운 객체를 생성하고 nb라는 변수에 저장
-        nb.num = 10; // 새로 만든 nb 에 10을 저장
-        changeNum(nb); //changeNum 메소드에서 nb(10)의 주소값을 가져감
+        NumberBox nb = new NumberBox(); // NumberBox만 저장 가능한 새로운 객체를 생성하고 nb라는 변수에 객체의 주소값 저장
+        nb.num = 10; // 새로 만든 nb객체의 필드 num에 10을 저장
+        changeNum(nb); //changeNum 메소드에 nb(10)의 주소값을 전달함
         System.out.println("nb.num" + nb.num);
     }
         /*
@@ -33,8 +32,8 @@ public class PrimitiveVsReferenceTest {
          */
     public static void changeNum(NumberBox nb){
         // 같은 changeNum 메소드명이지만 위에는 int num , 밑에는 numberbox nb를 주소값을 참조한 값이라 메소드명 겹쳐서 써도 됨 오버로딩이 가능하다.
-        nb = new NumberBox(); // 이렇게 하면 10 , 없으면 100
-        nb.num=100;
+        nb = new NumberBox(); // 이렇게 하면 10 , 없으면 100 -> 새로운 객체 주소를 생성하여 다른 주소값으로 방향 바뀜
+        nb.num=100; // 새로운 객체 주소가 잇을 경우 그 주소값 객체 nb의 필드 num에 100을 저장
     }
 }
 
