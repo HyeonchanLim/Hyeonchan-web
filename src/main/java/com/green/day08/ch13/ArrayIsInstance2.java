@@ -1,0 +1,36 @@
+package com.green.day08.ch13;
+
+public class ArrayIsInstance2 {
+    public static void main(String[] args) {
+        Box[] arr = new Box[5];
+        System.out.println(arr.length);
+
+        // Box b0 , b1 , b2; // Box 객체의 주소값이 b0 , b1 , b2에 저장됨
+
+        Box b1 = new Box("안녕");
+        System.out.println(b1);
+
+        arr[0] = b1;
+        arr[1] = new Box("하세요");
+        arr[2] = new Box("반갑습니다.");
+
+        System.out.println("----");
+        System.out.println(arr[0]);
+        System.out.println(arr[1]);
+        System.out.println(arr[2]);
+    }
+}
+
+//모든 클래스는 Object를 상속받는다.
+class Box {
+    private String conts;
+
+    Box(String conts) {
+        this.conts = conts;
+    }
+
+    // @Override 오버라이딩
+    String tostring() {
+        return conts;
+    }
+}
