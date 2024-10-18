@@ -10,6 +10,7 @@ public class MyArrays {
             sb.append(arr[i]);
         }
         return "[" + sb + "]";
+        // "[" + sb.toString() 이랑 같음 -> 문자열 더하기 객체 주소값이라 toString 을 더해줌
     }
 
     public static String toString3(int[] arr){
@@ -24,4 +25,19 @@ public class MyArrays {
         }
         return sb.append("]").toString();
     }
+    public static int[] copyOf(int[] arr) {
+        int[] temp = new int[arr.length];
+        for (int i = 0; i < arr.length; i++) {
+            temp[i] = arr[i];
+        }
+        return temp;
+    }
+    public static int[] copyOf(int[] arr , int n1) {
+        int[] temp = new int[n1];
+        for (int i = 0; i < n1; i++) {
+            temp[i] = arr[i];
+        }
+        return temp;
+    }
+
 }
