@@ -24,6 +24,14 @@ public class EnhancedForInst {
             sum += pr1.getPrice();
         }
         System.out.println("sum : " + sum);
+
+        //배열에서 제품명이 Apple인 것만 찾아서 콘솔에 출력
+
+        for (Product item : arr) {
+            if (item.getName().equals("Apple")){
+                System.out.println(item);
+            }
+        }
     }
 }
 
