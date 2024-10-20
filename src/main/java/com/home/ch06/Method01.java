@@ -9,7 +9,7 @@ public class Method01 {
         System.out.println("프로그램의 끝");
     }
 
-    public static void hiEveryone(int age) {
+    public static void hiEveryone(int age) { // 매개변수 age에 나이 넘어옴
         System.out.println("좋은 아침입니다");
         System.out.println("제 나이는" + age + "세 입니다.");
     }
