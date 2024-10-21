@@ -9,7 +9,7 @@ public class MissionTwoDimenArrayResult {
                 {80, 70, 60} //광수
         };
         String[] names = {"영수", "상철", "광수"};
-        int[] namesScore = new int[names.length];
+        int[] namesScore = new int[names.length]; // 3
 
         String[] subjects = {"국어", "영어", "수학"};
         int[] subjectsScore = new int[subjects.length];

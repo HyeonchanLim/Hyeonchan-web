@@ -25,7 +25,6 @@ public class MissionTwoDimenArray {
 
 
         int sum = 0;
-        int avr = 0;
         int n1 = 0;
         int Kor , Eng , Math;
         for (int i=0; i<score.length; i++){
