@@ -42,7 +42,7 @@ class BusinessMan extends Man {
         // 해결 방법 2가지
         // 1. 부모에 기본 생성자를 만들어준다.
         // 2. man 클래스에 있는 생성자를 사용한다. 수동으로 작성
-        super("");
+        super(name); // 내 부모의 상수
         this.company = company; // this는 나 자신
         this.position = position;
     }
