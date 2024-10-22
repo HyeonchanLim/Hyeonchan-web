@@ -44,14 +44,6 @@ public class MyFriends2 {
         //main 메소드 수정 금지
         // 이름 , 전화번호 + 대학친구는 전공도 출력 , 직장동료는 부서 출력
 
-        for (int i=0; i<arr3.length; i++){
-            Friend item = arr3[i];
-            if (item==null){
-                continue;
-            }
-            item.showInfo();
-            System.out.println();
-        }
     }
 }
 
@@ -70,6 +62,7 @@ class Friend {
     public String getPhone() {
         return phone;
     }
+
     public void showInfo(){
         System.out.println("이름 : " + name);
         System.out.println("전화 : " + phone);
@@ -88,7 +81,7 @@ class UnivFriend2 extends Friend{
     }
     @Override
     public void showInfo(){
-        super.showInfo();
+        super.showInfo(); // 부모클래스(super)의 showInfo 메서드 호출
         System.out.println("전공 : "+major);
     }
 }

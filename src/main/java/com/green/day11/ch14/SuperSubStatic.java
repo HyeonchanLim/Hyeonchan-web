@@ -13,11 +13,15 @@ public class SuperSubStatic {
 class SuperCLS {
     protected static int count; // protected 는 현재 클래스 + 조상 클래스까지 허용 범위 / public 보다 아래
 
+    //SuperCLS 클래스의 기본생성자에 파라미터를 작성하면 SubCLS의 기본 생성자는 오류 발생
     SuperCLS(){
         count++;
     }
 }
 class SubCLS extends SuperCLS {
+//    SubCLS(){
+//        super();
+//    } // 기본 생성자 작성x 기준
     // 조상 클래스의 기본 생성자가 없을 경우 조상클래스에 매개변수가 없는 생성자가 없다고 오류 생김
     void showCount () {
         System.out.println("count : " + count);
