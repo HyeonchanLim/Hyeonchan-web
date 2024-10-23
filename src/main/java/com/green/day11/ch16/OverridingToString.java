@@ -7,6 +7,7 @@ public class OverridingToString {
         CheeseCake cheeseCake = new CheeseCake();
         System.out.println(cheeseCake);
 
+        System.out.println(c.equals(c.toString()));// 앞에 c는 cake c의 cake를 가르키고 c.toString은 String타입 리턴
         Cake c2 = cheeseCake;
         System.out.println(c2); // 실행이 된다면 cheeseCake 나 c2나 똑같다.
         // 메소드 중 가장 먼저 만나는 자손 클래스의 메소드를 만나서 CheeseCake 의 toString 이 실행된다.

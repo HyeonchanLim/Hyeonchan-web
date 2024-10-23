@@ -43,11 +43,12 @@ public class PolyStudy {
 
         //3번 검증
         //  ani3.jump(); //ani3에는 BullDog 객체 주소값이 저장되어 있으나
-        //  Animal은 jump 메소드를 모르기(존재하지 않기 때문에) 때문에 호출할 수 없다.
+        //  Animal타입의 ani3은 jump 메소드를 모르기(존재하지 않기 때문에) 때문에 호출할 수 없다.
         ((BullDog)ani3).jump();
-        BullDog bullDog4 = (BullDog) ani3; // 명시정 형변환으로 바꿔준다.
+        // Animal타입 ani3 에서 BullDog 타입의 ani3 로 명시적형변환을 해줘서 jump 메소드를 호출 가능
+        BullDog bullDog4 = (BullDog) ani3; // 명시적 형변환으로 바꿔준다.
         bullDog4.jump();
-
+        //ani3 시점에서는 jump를 모르지만 BullDog 시점에서는 jump메소드를 알고 있어서 실행이 가능함
         ani3.crying();
         bullDog4.crying();
 
@@ -57,12 +58,31 @@ public class PolyStudy {
         //불가능 : 가능의 반대
 
         System.out.println(ani3 instanceof BullDog);
+        BullDog bullDog2 = new BullDog(); // 이 가능한지 체크함
         System.out.println(ani3 instanceof Dog);
-        System.out.println(ani4 instanceof BullDog);
-        System.out.println(ani4 instanceof Bird);
+        Dog dog = (Dog)ani3; // ani3 앞에 Dog 명시적 형변환이 없으면 x , 잇으면 앞에 Dog 타입으로 형변환 되서 가능
+//        System.out.println(ani4 instanceof BullDog);
+//        System.out.println(ani4 instanceof Bird);
+        System.out.println("----");
+        Cat cat2 = new Cat();
+        Dog dog2 = new Dog();
+        BullDog bullDog = new BullDog();
+        Bird bird = new Bird();
+        //동물을 울려주세요
+        animalCrying(cat2);
+        animalCrying(dog2);
+        animalCrying(bullDog);
+        animalCrying(bird);
 
         System.out.println("--끝--");
+
     }
+        static void animalCrying(Animal ani){ // Animal 클래스를 상속받은 자식을 인자로 받아온다
+            ani.crying(); // 인자로 받아온 자식 클래스 . crying 메소드 (오버라이딩) 호출
+            if(ani instanceof BullDog) { // ani 인자에서 BullDog true면 BullDog 클래스의 jump를 사용하게
+                ((BullDog)ani).jump();
+            }
+        }
 }
 
 class Animal {

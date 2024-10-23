@@ -10,7 +10,7 @@ public class SuperSubStatic {
     }
 }
 
-class SuperCLS {
+class SuperCLS { //1파일 1public class라 앞에 public을 못 붙임
     protected static int count; // protected 는 현재 클래스 + 조상 클래스까지 허용 범위 / public 보다 아래
 
     //SuperCLS 클래스의 기본생성자에 파라미터를 작성하면 SubCLS의 기본 생성자는 오류 발생
