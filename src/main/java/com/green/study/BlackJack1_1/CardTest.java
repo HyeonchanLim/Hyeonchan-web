@@ -1,6 +1,6 @@
 package com.green.study.BlackJack1_1;
 
-public class CardTest {
+class CardTest {
         public static void main(String[] args) {
             CardDeck cd = new CardDeck();
 

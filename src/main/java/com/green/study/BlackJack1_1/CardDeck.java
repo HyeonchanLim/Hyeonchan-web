@@ -1,20 +1,17 @@
 package com.green.study.BlackJack1_1;
 
-public class CardDeck {
+ class CardDeck {
         //Card 객체 주소값 52개를 저장할 수 있어야 한다.
         private final Card[] cards;
         private final String[] patterns;
         private int selectedIdx = 0; //외부에 줘야할 카드의 index값
 
-        public CardDeck() {
+        public  CardDeck() {
             cards = new Card[52];
             patterns = new String[]{ "Diamond", "Heart", "Clova", "Spade" };
-
             //미션1
             // "", "" 값을 가지고 있는 Card객체를 52개를 만들어주시고
             // cards배열에 하나씩 넣어주세요.
-
-
             //미션2
             //모두 다른값을 가지고 있는 Card객체 만들어서 cards에 순차적으로 넣어주세요.
             int idx = 0;

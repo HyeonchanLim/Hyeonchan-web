@@ -1,6 +1,6 @@
 package com.green.study.BlackJack1_1;
 
-public class Card {
+class Card {
     private final String pattern; //무늬
     private final String denomination; //A, 2~10, J, Q, K 값 저장
 

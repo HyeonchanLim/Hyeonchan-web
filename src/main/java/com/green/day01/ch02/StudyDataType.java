@@ -1,6 +1,8 @@
 package com.green.day01.ch02;
 
-public class StudyDataType {
+import com.green.day01.ch01.BlockComment;
+
+public class StudyDataType extends BlockComment {
     public static void main(String[] args) {
         /*
         자료형 : 정수형 , 실수형 , 불린형 , 문자형 >> primitive type (기본타입)
