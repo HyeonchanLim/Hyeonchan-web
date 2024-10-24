@@ -6,13 +6,13 @@ public class CardDeck {
     private final String[] patterns;
     private int selectedIdx = 0; // 외부에 줘야할 카드의 idx 값
 
-    public CardDeck() {
+    public CardDeck() { // 지역변수는 초기화값을 만들어주고 코드를 구성해야함.
         cards = new Card[52];
         patterns = new String[]{"Diamond", "Heart", "Clover", "Spade"};
 //        int type = (cards.length /patterns.length)-1;
 //        for (int x=0; x<cards.length; x++){
 //            for (int y=0; y<=type; y++){
-//                cards[x] = new Card(patterns[y],getDenomination(x));
+//                cards[x] = new Card(patterns[x],getDenomination(y));
 //            }
 //        }
         int idx = 0;
@@ -45,10 +45,10 @@ public class CardDeck {
     }
     // cards 배열에 selectedIdx=0 번 부터 시작해서 방이 호출될때 마다 null을 주고 다음 방을 부르기 위해 ++ 를 사용
     public Card draw() {
-        Card c = cards[selectedIdx];
+        Card tmp = cards[selectedIdx]; //swapping 처럼 데이터를 잠시 보관함 장소를 생성
         cards[selectedIdx] = null;
         selectedIdx++;
-        return c;
+        return tmp;
     }
     public void checkCard(){
         for(Card c : cards){
