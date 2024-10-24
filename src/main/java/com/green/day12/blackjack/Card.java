@@ -4,7 +4,8 @@ public class Card {
     private final String pattern; //무늬 /
     private final String denomination; //A, 2~10, J, Q, K 값 저장
 
-    public Card(final String pattern, final String denomination) {// 상수의 데이터를 매개변수에 가져오면서 변경이 없도록 만들고 final을 붙이면 속도가 빨라짐.
+    public Card(final String pattern, final String denomination) {
+        // 상수의 데이터를 매개변수에 가져오면서 변경이 없도록 만들고 final을 붙이면 속도가 빨라짐.
         // 그리고 불변성을 나타내는 final이라 이 파라미터의 변경을 못하게 하는 개발자의 의도를 보이게 해줌.
         this.pattern = pattern;
         this.denomination = denomination;
