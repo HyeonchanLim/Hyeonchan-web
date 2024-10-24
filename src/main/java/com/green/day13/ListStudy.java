@@ -39,20 +39,19 @@ public class ListStudy {
 
         int[] arr = new int[3];
         Object[] arr2 = new Object[4]; // 오브젝트는 전부 포용하기 때문에 타입을 구분하지 않음.
-        arr[2]=10;
-        arr2[1]="하하";
+        arr2[1]=10;
+        arr2[2]="하하"; // 정수 Integer , String 전부 배열에 객체 생성 가능
 
 //        int val0 = list.get(0); // 가져오는 위치가 Object 라서 형변환이 필요함
         int val0 = (int)list.get(0);
+        // list.get 으로 가져오는 배열은 최상위 부모인 Object 클래스라서 int로 형변환을 해줘야함
         System.out.println("val0 : " + val0);
 
-
-
         String val1 = (String)list.get(3);
+        // list의 3번인 4번째 방은 String 타입의 "하하"가 있어서 String 타입으로 형변환 해줘야함.
         System.out.println("val1 : " + val1);
         System.out.println(list); // ArrayList 에 toString 오버라이딩 되어 있어서 나옴
         System.out.println(list2);
-
 
     }
 }
