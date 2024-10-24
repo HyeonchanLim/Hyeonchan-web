@@ -5,6 +5,9 @@ import java.util.List;
 
 public class ListStudy {
     /*
+    interface 는 객체가 없는 추상클래스들의 집합체 - 메소드들로만 이루어짐
+
+
     List 인터페이스 , 객체화가 불가능하다.
 
     인터페이스는 부모역할만 한다. List를 상속받은 (LinkedList , ArrayList)클래스가 있다.
