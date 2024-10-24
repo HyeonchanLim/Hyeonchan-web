@@ -11,15 +11,6 @@ public class MyArrayList {
 //    }
 
     @Override
-//    public String toString() {
-//        StringBuilder sb = new StringBuilder();
-//        for (int i=0; i<arr.length; i++){
-//            sb.append(arr[i]);
-//            sb.append(", ");
-//        }
-//        sb.delete(sb.length()-2,sb.length());
-//        return "[" + sb + "]";
-//    }
     public String toString() {
         if(arr.length == 0) {
             return "[]";
@@ -33,6 +24,15 @@ public class MyArrayList {
     sb.append("]");
         return sb.toString();
     }
+//    public String toString() {
+//        StringBuilder sb = new StringBuilder();
+//        for (int i=0; i<arr.length; i++){
+//            sb.append(arr[i]);
+//            sb.append(", ");
+//        }
+//        sb.delete(sb.length()-2,sb.length());
+//        return "[" + sb + "]";
+//    }
 
     public void add (int num){
         int[] tmp = new int[arr.length+1]; // 배열 길이 +1 -> tmp에 저장
