@@ -15,6 +15,9 @@ public class PrintableInterface {
         // Printable p1 = new Printable();
         Printable p2 = new PrintableImpl();
         p2.print("dddd");
+        System.out.println(p2.NUM); // 인터페이스 . NUM
+        System.out.println(Printable.NUM); // 클래스 . NUM
+
     }
 }
 
@@ -32,6 +35,7 @@ class PrintableImpl implements Printable {
 
     @Override
     public void print(String doc) {
+        System.out.println(NUM);
         System.out.println(doc);
     }
 
