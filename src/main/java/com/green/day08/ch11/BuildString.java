@@ -24,6 +24,7 @@ public class BuildString {
 
         sb.insert(0,"1");
         System.out.println(sb);
+        System.out.println("---");
 
         sb.append("345678");
         System.out.println("sb :" + sb);
@@ -32,7 +33,7 @@ public class BuildString {
         String str = sb.toString(); // StringBuilder 에서 string 타입으로 변경
         System.out.println("sb : " + sb);
         System.out.println("str : " + str); //
-
+        System.out.println("====");
         sb.reverse();
         System.out.println("sb: " + sb);
 

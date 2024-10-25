@@ -2,6 +2,7 @@ package com.green.day05.ch06;
 
 public class MethodDef {
     static void hiEveryone (int age){
+
         System.out.printf("좋은 아침입니다. \n 제 나이는 %d 세 입니다.\n" , age);
     }
 
