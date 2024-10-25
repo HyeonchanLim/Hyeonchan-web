@@ -5,7 +5,7 @@ import com.green.day01.ch01.SystemOutPrintln;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ListStudy2 {
+public class    ListStudy2 {
     public static void main(String[] args) {
         // <> = Generic
         // <> 안에 변수는 primitive 입력 불가능 ArrayList 실행될 때 타입 설정
