@@ -16,9 +16,9 @@ public class CardDeck {
 //            }
 //        }
         int idx = 0;
-        for (int i = 0; i < patterns.length; i++) {
+        for(int i=0; i<patterns.length; i++) { //0, 1, 2, 3
             String pattern = patterns[i];
-            for (int z = 1; z <= 13; z++) {
+            for(int z=1; z<=13; z++) { // 1~13
                 String denomination = getDenomination(z);
                 cards[idx++] = new Card(pattern, denomination);
             }
@@ -36,6 +36,7 @@ public class CardDeck {
 //            cards[i]=new Card("A","B");
 //        }
         shuffle();
+
         //enhanced-for문으로 card 객체 주소값 전부 출력
         for (Card c : cards) {
             System.out.println(c);
@@ -43,9 +44,19 @@ public class CardDeck {
             // 출력값이 com.green.~~~ 이렇게 나옴 그래서 Card클래스에 toString 메소드를 오버라이딩하여 만들어줘야한다.
         }
     }
+
     // cards 배열에 selectedIdx=0 번 부터 시작해서 방이 호출될때 마다 null을 주고 다음 방을 부르기 위해 ++ 를 사용
+//    public Card draw() {
+//        Card tmp = cards[selectedIdx]; //swapping 처럼 데이터를 잠시 보관함 장소를 생성
+//        cards[selectedIdx] = null;
+//        selectedIdx++;
+//        return tmp;
+//    }
     public Card draw() {
-        Card tmp = cards[selectedIdx]; //swapping 처럼 데이터를 잠시 보관함 장소를 생성
+        if(selectedIdx == 52) {
+            return null;
+        }
+        Card tmp = cards[selectedIdx];
         cards[selectedIdx] = null;
         selectedIdx++;
         return tmp;
@@ -55,20 +66,19 @@ public class CardDeck {
             System.out.println(c);
         }
     }
-    private void shuffle(){
-        for (int i=0; i< cards.length; i++){
-            int rIdx = (int)(Math.random()*cards.length);
+    private void shuffle() {
+        for(int i=0; i<cards.length; i++) {
+            int rIdx = (int)(Math.random() * cards.length); //0 ~ 51
             Card tmp = cards[i];
             cards[i] = cards[rIdx];
-            cards[rIdx]=tmp;
+            cards[rIdx] = tmp;
         }
     }
-    public String getDenomination (int n){
-
-        if (n<1 || n>13){
+    public String getDenomination(int n) {
+        if(n < 1 || n > 13) {
             return "";
         }
-        switch (n){
+        switch(n) {
             case 1:
                 return "A";
             case 11:

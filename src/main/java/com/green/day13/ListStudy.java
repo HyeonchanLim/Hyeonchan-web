@@ -41,10 +41,13 @@ public class ListStudy {
         Object[] arr2 = new Object[4]; // 오브젝트는 전부 포용하기 때문에 타입을 구분하지 않음.
         arr2[1]=10;
         arr2[2]="하하"; // 정수 Integer , String 전부 배열에 객체 생성 가능
+        // list.get 사용 -> 정수 , 문자열 등등 타입이 여러개 나온다면 object라고 생각
 
 //        int val0 = list.get(0); // 가져오는 위치가 Object 라서 형변환이 필요함
         int val0 = (int)list.get(0);
         // list.get 으로 가져오는 배열은 최상위 부모인 Object 클래스라서 int로 형변환을 해줘야함
+        // 그래서 object 에서 배열을 생성하면 형변환을 계속 체크를 하는 불편함으로 object는 추천하지 않음
+
         System.out.println("val0 : " + val0);
 
         String val1 = (String)list.get(3);

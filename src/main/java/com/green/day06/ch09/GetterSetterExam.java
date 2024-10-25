@@ -22,15 +22,19 @@ class Student {
     private int age;
     private float height;
 
+
     //this 는 상수이고 나 자신의 주소값이 저장된 공간
     // main 메소드에서 같은걸 여러번 참조할 경우에는 참조되는 그 시점의 주소값을 가져옴
     public  void setName (String name){ // 첫글자 대문자로
         this.name = name;
+
     }
     /*
     getter 는 읽기 , 가져올때
     setter 는 변경할 때
      */
+
+
 
     public String getName() {
         return name;
@@ -43,5 +47,10 @@ class Student {
     public int getAge () {
         return  age;
     }
-
+    public void setHeight(float height) {
+        this.height = height;
+    }
+    public float getHeight() {
+        return height;
+    }
 }

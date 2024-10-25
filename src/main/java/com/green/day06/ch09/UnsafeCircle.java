@@ -5,7 +5,7 @@ public class UnsafeCircle {
         Circle c = new Circle();
         c.setRad(1.5);
         System.out.println("원의 넓이(1) :"+c.getArea());
-
+        c.setRad(1.5);
         c.setRad(2.5);
         System.out.println("원의 넓이(2) :"+c.getArea());
 

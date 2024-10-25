@@ -3,12 +3,12 @@ package com.green.day13;
 public class MyArrayListTest {
     public static void main(String[] args) {
         MyArrayList list = new MyArrayList();
-        System.out.println(list.size());
         list.add(10);
         System.out.println(list);
         System.out.println(list.size());
         list.add(20);
         System.out.println(list);
+        System.out.println(list.size());
         list.add(30);
         System.out.println(list);
         System.out.println(list.size());
