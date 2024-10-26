@@ -3,7 +3,7 @@ package com.green.day14.ch17;
 public abstract class AbstractStudy {
     /*
     p.380 추상클래스
-
+1
     class 키워드 앞에 abstract 키워드를 붙이면 추상클래스가 된다.
     추상클래스가 되면 객체화 불가능 -> 부모역할만 한다. (단독으로는 의미 없음)
     추상클래스를 상속받는 클래스가 있기 마련이다.
