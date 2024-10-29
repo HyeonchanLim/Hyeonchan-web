@@ -7,7 +7,6 @@ public class ExceptionCase5 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-
         try {
             System.out.print("a/b ... a?");
             int n1 = scan.nextInt();
@@ -16,7 +15,7 @@ public class ExceptionCase5 {
 
             System.out.printf("%d / %d = %d\n " ,n1 , n2 , n1/n2);
         } catch (InputMismatchException | ArithmeticException e){ // | 사용해서 다중 catch 가능
-            e.printStackTrace(); // InputMismatch 발생
+            e.printStackTrace(); // 예외처리 중 InputMismatch 발생
             System.out.println(e.getMessage()); // 기본값 null
         }
         System.out.println("--------");

@@ -58,6 +58,7 @@ class FinallyCase3 {
             System.out.println("return 있더라도 finally 있어서 실행함");
             try {
                 if(writer != null) {
+                    //writer가 null이 아닐 경우에만 close()를 호출해 NullPointerException을 방지
                     writer.close();
                 }
             } catch (IOException e) {

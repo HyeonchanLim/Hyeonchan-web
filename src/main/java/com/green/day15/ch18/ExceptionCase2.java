@@ -17,6 +17,7 @@ public class ExceptionCase2 {
         } catch (ArithmeticException e){
             e.printStackTrace(); // try-catch문이 없었다면 콘솔에서 봤을 에러 문장 출력
             System.out.println(e.getMessage());
+            //getMessage 는 예외처리 최상위 부모인 Throwable 에 있는 message 를 오버로딩해서 가져옴
         }
         System.out.println("==end==");
     }

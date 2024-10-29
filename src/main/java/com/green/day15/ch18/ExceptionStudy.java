@@ -21,7 +21,7 @@ public class ExceptionStudy {
 
     public static int myParseInt (String str1){
         try {
-            return Integer.parseInt(str1);
+            return Integer.parseInt(str1); // 문자열을 Integer 타입으로 전환
         }catch (Exception e){
             return 0;
             // catch 문 실행 후 return을 시켜줘야함 why? -> 현재 try가 반환 타입이 있는 메소드 안에 작성을 해서
