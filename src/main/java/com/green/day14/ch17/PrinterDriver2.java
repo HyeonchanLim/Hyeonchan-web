@@ -10,6 +10,9 @@ public class PrinterDriver2 {
         prn1.print(myDoc);
         System.out.println();
         prn2.print(myDoc);
+
+        // prn1 = prn2; // 둘 다 Printable 부모 타입이 같아서 가능
+
     }
 }
 
