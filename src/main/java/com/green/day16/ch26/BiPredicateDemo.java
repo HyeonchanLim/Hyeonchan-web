@@ -10,7 +10,16 @@ public class BiPredicateDemo {
         System.out.println(conv.test("Robot",3)); // true
         System.out.println(conv.test("Box",5)); // false
 
+        String str1 = "Hello";
+        String str2 = "Hellk";
 
+        BiPredicate<String , String> conv2 = (s1,s2) -> s1.length() == s2.length();
+
+        if (conv2.test(str1,str2)){
+            System.out.println("두 문자열의 길이는 같습니다.");
+        } else {
+            System.out.println("두 문자열의 길이는 다릅니다.");
+        }
     }
 }
 
