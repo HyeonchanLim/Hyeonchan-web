@@ -1,4 +1,4 @@
-package com.green.study.CodingTest;
+package com.study.CodingTest;
 
 import java.util.Arrays;
 
