@@ -24,7 +24,7 @@ public class BoardDao {
             ps.setString(2, board.getContents());
             ps.setString(3, board.getWriter());
 
-            result = ps.executeUpdate(); //쿼리 실행
+            result = ps.executeUpdate(); //쿼리 실행 -> 실행 1 , 실행 실패 0 값을 int 로 반환
         } catch (Exception e) {
             e.printStackTrace();
         }
